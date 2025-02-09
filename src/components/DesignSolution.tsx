@@ -24,14 +24,14 @@ export const DesignSolution = () => {
     },
   ];
   return (
-    <div className="flex flex-col justify-center gap-4">
+    <div className="flex flex-col justify-start gap-4">
       <div className="flex items-center gap-2">
         <ProfileIcons logo={image2} alt="link img need to here" link="" />
         <h1 className="text-xl font-semibold text-foreground">
           Design Solution
         </h1>
       </div>
-      <div className="-ml-2 flex items-center justify-center gap-4">
+      <div className="flex items-center justify-start gap-4">
         {cardData.map((card, index) => (
           <div key={index}>
             <CardComps cardData={card} />

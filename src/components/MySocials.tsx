@@ -1,12 +1,21 @@
 import { ProfileIcons } from "./common/ProfileIcons";
-import image from "../assets/images/HeroImageCard.png";
+import linkedInImage from "../assets/images/LinkedInCardImage.png";
 import image2 from "../assets/icons/LinkedInIcon.svg";
 import { CardDataType } from "./utils/types";
 import { CardComps } from "./common/CardComps";
+
 export const MySocials = () => {
   const cardData: CardDataType[] = [
     {
-      image: image,
+      image: linkedInImage,
+      title: "Linked In",
+      tags: ["SaaS", "E-commerce", "WebSite", "Mobile Application"],
+      buttonText: "Link 🚀",
+      className: "",
+      buttonLink: "",
+    },
+    {
+      image: linkedInImage,
       title: "Optical Industry",
       tags: ["SaaS", "E-commerce", "WebSite", "Mobile Application"],
       buttonText: "Link 🚀",
@@ -14,7 +23,7 @@ export const MySocials = () => {
       buttonLink: "",
     },
     {
-      image: image,
+      image: linkedInImage,
       title: "Optical Industry",
       tags: ["SaaS", "E-commerce", "WebSite", "Mobile Application"],
       buttonText: "Link 🚀",
@@ -23,12 +32,12 @@ export const MySocials = () => {
     },
   ];
   return (
-    <div className="flex flex-col justify-center gap-4">
+    <div className="flex flex-col justify-start gap-4">
       <div className="flex items-center gap-2">
         <ProfileIcons logo={image2} alt="link img need to here" link="" />
         <h1 className="text-xl font-semibold text-foreground">My Socials</h1>
       </div>
-      <div className="-ml-2 flex items-center justify-center gap-4">
+      <div className="flex items-center justify-start gap-4">
         {cardData.map((card, index) => (
           <div key={index}>
             <CardComps cardData={card} />
