@@ -23,15 +23,15 @@ export const Profile = () => {
     },
   ];
   return (
-    <div className="flex items-center justify-center gap-2 flex-col">
+    <div className="mt-14 flex flex-col items-center justify-center gap-2 md:items-start md:justify-start">
       <img
         src={profileImage}
         alt="Profile Image"
-        className="rounded-full w-20 h-w-20"
+        className="h-24 w-24 rounded-full"
       />
       <h1 className="text-[2rem] text-foreground">Velusamy S</h1>
       <p className="text-foreground">UI/UX DESIGNER</p>
-      <div className="flex items-center justify-center gap-2 mt-2">
+      <div className="mt-2 flex items-center gap-2">
         {profileIconContent.map(({ logo, alt, link }, index) => (
           <div key={index}>
             <ProfileIcons logo={logo} alt={alt} link={link} />
