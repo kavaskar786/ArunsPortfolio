@@ -8,9 +8,10 @@ export const CardComps = ({
   cardData: CardDataType;
   isWhiteBgButton?: boolean;
 }) => {
+  console.log(className);
   return (
     <div
-      className={`flex h-[43.5vh] w-[32.5vh] flex-col items-center overflow-hidden rounded-3xl bg-white md:h-[41.5vh] ${className}`}
+      className={`flex h-[43.5vh] w-[32.5vh] flex-col items-center overflow-hidden rounded-3xl md:h-[41.5vh] ${className ? className : "bg-white"} `}
     >
       <div className="m-2 overflow-hidden rounded-2xl">
         <img className="h-[20vh]" src={image} alt={title} />
