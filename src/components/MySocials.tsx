@@ -5,12 +5,7 @@ import behanceCardImage from "../assets/images/BehanceCardImage.png";
 import image2 from "../assets/icons/LinkedInIcon.svg";
 import { CardDataType } from "./utils/types";
 import { CardComps } from "./common/CardComps";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselNext,
-  CarouselPrevious,
-} from "./ui/carousel";
+import { Carousel, CarouselContent } from "./ui/carousel";
 
 export const MySocials = () => {
   const cardData: CardDataType[] = [
