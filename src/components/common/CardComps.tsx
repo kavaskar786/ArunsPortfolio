@@ -3,15 +3,14 @@ import { CardDataType } from "../utils/types";
 
 export const CardComps = ({
   cardData: { className, image, title, tags, buttonText, buttonLink },
+  isWhiteBgButton,
 }: {
   cardData: CardDataType;
+  isWhiteBgButton?: boolean;
 }) => {
   return (
     <div
-      className={
-        className +
-        "flex h-[41.5vh] w-[32.5vh] flex-col items-center overflow-hidden rounded-3xl bg-white"
-      }
+      className={`flex h-[43.5vh] w-[32.5vh] flex-col items-center overflow-hidden rounded-3xl bg-white md:h-[41.5vh] ${className}`}
     >
       <div className="m-2 overflow-hidden rounded-2xl">
         <img className="h-[20vh]" src={image} alt={title} />
@@ -27,12 +26,19 @@ export const CardComps = ({
             )}
           </div>
         </div>
-        <Button
-          className="-ml-2 flex items-center justify-center rounded-full bg-background text-foreground hover:bg-accent"
-          onClick={() => buttonLink}
-        >
-          {buttonText}
-        </Button>
+        <a href={buttonLink} target="_blank">
+          <Button
+            className={`-ml-2 flex items-center justify-center rounded-full ${isWhiteBgButton ? "bg-white" : "bg-background"} text-foreground hover:bg-accent`}
+          >
+            {
+              <span
+                className={`${isWhiteBgButton ? "text-black" : "text-white"}`}
+              >
+                {buttonText}
+              </span>
+            }
+          </Button>
+        </a>
       </div>
     </div>
   );

@@ -23,7 +23,7 @@ export const Profile = () => {
     },
   ];
   return (
-    <div className="mt-14 flex flex-col gap-2">
+    <div className="mt-14 flex flex-col items-center justify-center gap-2 md:items-start md:justify-start">
       <img
         src={profileImage}
         alt="Profile Image"
