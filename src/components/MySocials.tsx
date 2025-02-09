@@ -2,7 +2,7 @@ import { ProfileIcons } from "./common/ProfileIcons";
 import linkedInCardImage from "../assets/images/LinkedInCardImage.png";
 import dribbleCardImage from "../assets/images/DribbleCardImage.png";
 import behanceCardImage from "../assets/images/BehanceCardImage.png";
-import image2 from "../assets/icons/LinkedInIcon.svg";
+import image2 from "../assets/icons/LinkIcon.svg";
 import { CardDataType } from "./utils/types";
 import { CardComps } from "./common/CardComps";
 import { Carousel, CarouselContent } from "./ui/carousel";
@@ -20,7 +20,7 @@ export const MySocials = () => {
     {
       image: dribbleCardImage,
       title: "Optical Industry",
-      tags: ["SaaS", "E-commerce", "WebSite", "Mobile Application"],
+      tags: ["Graphic Design", "Poster", "Social media"],
       buttonText: "Follow",
       className: "bg-[#F4427E] text-white",
       buttonLink: "https://dribbble.com/jnwick1807",
@@ -28,7 +28,7 @@ export const MySocials = () => {
     {
       image: behanceCardImage,
       title: "Optical Industry",
-      tags: ["SaaS", "E-commerce", "WebSite", "Mobile Application"],
+      tags: ["UI/UX", "usability testing", "AI integration"],
       buttonText: "Follow",
       className: "bg-[#004BD0] text-white",
       buttonLink: "https://www.behance.net/velusamy2000",

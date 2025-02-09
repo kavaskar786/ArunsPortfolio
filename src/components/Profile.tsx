@@ -27,14 +27,14 @@ export const Profile = () => {
       <img
         src={profileImage}
         alt="Profile Image"
-        className="h-24 w-24 rounded-full"
+        className="h-[120px] w-[120px] rounded-full"
       />
       <h1 className="text-[2rem] text-foreground">Velusamy S</h1>
       <p className="text-foreground">UI/UX DESIGNER</p>
       <div className="mt-2 flex items-center gap-2">
         {profileIconContent.map(({ logo, alt, link }, index) => (
           <div key={index}>
-            <ProfileIcons logo={logo} alt={alt} link={link} />
+            <ProfileIcons logo={logo} alt={alt} link={link} isBg />
           </div>
         ))}
       </div>

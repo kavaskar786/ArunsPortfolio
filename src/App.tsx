@@ -6,7 +6,7 @@ export const App = () => {
   return (
     <div className="flex min-h-[100vh] min-w-[90vw] flex-col justify-center gap-5 bg-background md:flex-row">
       <Profile />
-      <div className="mt-20 flex flex-col items-start justify-center gap-9 md:ml-24 md:mr-20">
+      <div className="mt-16 flex flex-col items-start justify-center gap-9 md:ml-24 md:mr-20">
         <DesignSolution />
         <MySocials />
       </div>

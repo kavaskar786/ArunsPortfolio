@@ -1,7 +1,7 @@
 import { CardComps } from "./common/CardComps";
 import { CardDataType } from "./utils/types";
 import image from "../assets/images/HeroImageCard.png";
-import image2 from "../assets/icons/LinkedInIcon.svg";
+import image2 from "../assets/icons/LinkIcon.svg";
 import { ProfileIcons } from "./common/ProfileIcons";
 import { Carousel, CarouselContent } from "./ui/carousel";
 
