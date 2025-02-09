@@ -1,4 +1,4 @@
-import profileImage from "../assets/images/ProfileImage.png";
+import profileImage from "../assets/images/image.png";
 import linkedInIcon from "../assets/icons/LinkedInIcon.svg";
 import dribbleIcon from "../assets/icons/DribbleIcon.svg";
 import behanceIcon from "../assets/icons/BehanceIcon.svg";
